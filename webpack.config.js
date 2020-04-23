@@ -16,7 +16,8 @@ module.exports = {
             // 変数$として使えるようにする
             $: 'jquery'
         }),
-        new BundleAnalyzerPlugin(),
+        new BundleAnalyzerPlugin(), // モジュールのファイルサイズを確認
+        // output.path = 今回はpublic/js/内のファイルを削除する
         new CleanWebpackPlugin()
     ]
 }
